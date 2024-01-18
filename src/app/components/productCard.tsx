@@ -137,7 +137,7 @@ const ProductList: React.FC<ProductListProps> = ({
           key={product.id}
         >
           <div className="product-image">
-            <Image src={product.image} alt={product.name} />
+            <Image src={product.image} alt={product.name} layout="fill" />
             <div className="Image-overlay">
               {isItemInCart ? (
                 <span onClick={() => handleRemoveFromCart(product.id)}>
